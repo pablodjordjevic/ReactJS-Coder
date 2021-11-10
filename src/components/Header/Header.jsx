@@ -1,8 +1,10 @@
 import React from 'react'
 import './Navbar.css';
+import './CartWidget.jsx'
+import CartWidget from './CartWidget.jsx';
 
 
-function Navbar() {
+function Header() {
   return (
     <div className="Navbar">
       
@@ -15,12 +17,18 @@ function Navbar() {
       </div>
       
       <div className="LadoDerecho">
+      
         <input type="text" placeholder="Encuentra aqui..."/>
         <button className="BotonBuscador">Buscar</button>
+        <CartWidget/>
+        
       </div>
     
     </div>
   )
 }
 
-export default Navbar;
+export default Header;
+
+
+
