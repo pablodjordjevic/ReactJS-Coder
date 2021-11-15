@@ -9,10 +9,9 @@ function App() {
     <div className="App">
       <Header/> 
       <ItemListContainer greeting="Bienvenidos" />
-      <ItemCount stock="5" initial="1"/>
+      <ItemCount stock= {9} initial= {1}/>
     </div>
   );
 }
 
 export default App;
-
