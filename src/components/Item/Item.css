@@ -8,3 +8,12 @@
   border-radius: 10px;
 }
 
+.card--tittle {
+  display: flex;
+  justify-content: center;
+}
+
+.card--description{
+  display: flex;
+  justify-content: center;
+}
