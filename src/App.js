@@ -1,15 +1,21 @@
-import './components/Header/Header'
-import './App.css';
+import React from 'react';
+import Products from './pages/Products';
 import Header from './components/Header/Header';
-import ItemListContainer from './components/ItemListContainer/ItemListContainer';
+import {BrowserRouter, Route, Routes } from 'react-router-dom';
+import './App.css';
+import ItemDetailContainer from './components/ItemDetail/ItemDetailContainer';
 
-
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <Header/> 
-      <ItemListContainer saludo="Bienvenidos" />
-    </div>
+    
+      <BrowserRouter>
+        <Header/> 
+        <Routes>
+          <Route exact path="/products" component={Products} />
+          <Route exact path="/ItemDetailContainer/:id" component={ItemDetailContainer} />
+        </Routes>
+      </BrowserRouter>
+    
   );
 }
 
