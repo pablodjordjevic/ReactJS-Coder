@@ -1,7 +1,7 @@
 import React from 'react';
 import Products from './pages/Products';
 import Header from './components/Header/Header';
-import {BrowserRouter, Route, Routes } from 'react-router-dom';
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import './App.css';
 import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer';
 import Home from './pages/Home';
@@ -11,11 +11,11 @@ const App = () => {
     
       <BrowserRouter>
         <Header/> 
-        <Routes>
+        <Switch>
           <Route exact path="/" component={Home} />
           <Route exact path="/products" component={Products} />
           <Route exact path="/ItemDetailContainer/:id" component={ItemDetailContainer} />
-        </Routes>
+        </Switch>
       </BrowserRouter>
     
   );

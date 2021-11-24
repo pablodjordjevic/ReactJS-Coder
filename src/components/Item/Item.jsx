@@ -10,9 +10,10 @@ const Item = ({item}) => {
 return (
 <Fragment>
   <Col key={item.id} className="box" sm="12" md="6" lg="4">
-    <Link className="nav-link" to={`/ItemDetailContainer/${item.id}`}>
       <Card >
-        <Card.Img variant="top" src={item.image} />
+        <Link className="nav-link" to={`/ItemDetailContainer/${item.id}`}>
+          <Card.Img variant="top" src={item.image} />
+        </Link>
         <Card.Body>
           <Card.Title className="card--tittle">
             {item.title}
@@ -23,7 +24,6 @@ return (
           <ItemCount stock= {9} initial= {1}/>
         </Card.Body>
       </Card>
-    </Link>
   </Col>
   </Fragment>
   )

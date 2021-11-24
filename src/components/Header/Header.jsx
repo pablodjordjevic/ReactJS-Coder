@@ -10,7 +10,7 @@ function Header() {
       
       <div className="LadoIzquierdo">
         <div className="Links">
-          <a href="/home">Home</a>
+          <a href="/">Home</a>
           <a href="/Products">Productos</a>
         </div>
       </div>
