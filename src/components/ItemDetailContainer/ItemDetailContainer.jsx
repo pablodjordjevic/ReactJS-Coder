@@ -7,9 +7,9 @@ const ItemDetailContainer = () => {
   const [detail, setDetail] = useState({});
 
   useEffect(() => {
-    const getProduct = new Promise ((res)=> {
+    const getProduct = new Promise((res) => {
       setTimeout(()=>{
-        res(products[2]);
+        res(products[0]);
       }, 1000);
 
     });

@@ -1,5 +1,6 @@
 import * as React from "react";
 import { Fragment } from 'react';
+import './HeroImage.css'
 
 const  HeroImage = (heroImgProps) => {
   return (
